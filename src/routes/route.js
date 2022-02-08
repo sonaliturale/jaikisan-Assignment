@@ -6,10 +6,6 @@ const myMiddleware = require('../middleware/middleware');
 const questionController = require('../controllers/questionController')
 const answerController = require('../controllers/answerController')
 
-
-
-
-
 //------------------------User routes-----------------------
 router.post('/register', userController.createUser)
 router.post('/login', userController.userLogin)
@@ -28,10 +24,5 @@ router.post('/answer',myMiddleware.checkLogin,answerController.createAnswer)
 router.get('/questions/:questionId/answer',answerController.getdetails)
 router.put('/answer/:answerId',myMiddleware.checkLogin,answerController.updateanswer)
 router.delete('/answer/:answerId',myMiddleware.checkLogin,answerController.deleteanswer)
-
-
-
-
-
 
 module.exports = router;

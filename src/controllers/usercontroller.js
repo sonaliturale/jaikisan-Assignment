@@ -53,7 +53,7 @@ const createUser = async function (req, res) {
             return res.status(400).send({ status: false, message: "Please provide phone number or phone field" });
         }
         if (!isValidMobileNum(phone)) {
-            return res.status(400).send({ status: false, message: '1 Please provide a valid phone number' })
+            return res.status(400).send({ status: false, message: 'Please provide a valid phone number' })
         }
         if (!isValid(password)) {
             return res.status(400).send({ status: false, message: "Please provide password or password field" });;
@@ -167,7 +167,7 @@ const updateProfile = async (req, res) => {
             return res.status(400).send({ status: false, message: "Please provide phone number or phone field" });
         }
         if (!isValidMobileNum(phone)) {
-            return res.status(400).send({ status: false, message: '1 Please provide a valid phone number' })
+            return res.status(400).send({ status: false, message: 'Please provide a valid phone number' })
         }
         const isphoneAlreadyUsed = await userModel.findOne({ phone });
 

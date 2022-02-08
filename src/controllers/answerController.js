@@ -168,5 +168,6 @@ const deleteanswer = async (req, res) => {
 
 }
 
+module.exports = { createAnswer, getdetails, updateanswer, deleteanswer}
 
-module.exports = { createAnswer, getdetails, updateanswer, deleteanswer }
+

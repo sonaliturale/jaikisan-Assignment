@@ -117,8 +117,6 @@ const getQuestionById = async (req, res) => {
 
 }
 
-
-
 const updatequestion = async (req, res) => {
     try {
         const params = req.params.questionId;
@@ -165,9 +163,6 @@ const updatequestion = async (req, res) => {
         return res.status(500).send({ status: false, msg: err.message })
     }
 }
-
-
-
 
 const deleteQuestion = async (req, res) => {
     try {

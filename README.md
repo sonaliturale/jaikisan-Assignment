@@ -6,6 +6,7 @@ Phase
 
 FEATURE I - User
 Models
+
 User Model
 { 
   fname: {string, mandatory},
