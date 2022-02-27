@@ -51,4 +51,3 @@ module.exports.createCustomer=createCustomer
 module.exports.getCustomerDetail=getCustomerDetail
 module.exports.Deletecustomer=Deletecustomer
 
-

@@ -40,3 +40,12 @@ const cardSchema = new mongoose.Schema({
 
     
 
+
+
+
+
+
+
+
+
+    //

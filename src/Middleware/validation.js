@@ -122,4 +122,3 @@ const checkCard = async (req, res, next) => {
 
 module.exports.checkCustomer =checkCustomer 
 module.exports.checkCard =checkCard
-        

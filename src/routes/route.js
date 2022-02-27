@@ -18,3 +18,4 @@ router.post('/createCard',validator.checkCard,CardController.createCard)
 router.get('/getcard',CardController.getAllCards)
 
 module.exports = router;
+
